@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>../../bin/Cache</OutputPath>
+  </PropertyGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\..\FiQi.Redis\FiQi.Redis.csproj" />
+    <ProjectReference Include="..\FiQi.Cache.Abstract\FiQi.Cache.Abstract.csproj" />
+  </ItemGroup>
+
+</Project>
