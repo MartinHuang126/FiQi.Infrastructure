@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System;
+using System.Text.Json;
 
 namespace FiQi.Util.Json
 {
@@ -12,6 +13,11 @@ namespace FiQi.Util.Json
         public static string Serialize<T>(T t)
         {
             return JsonSerializer.Serialize(t);
+        }
+
+        public static bool IsJson(string json)
+        {
+            throw new NotImplementedException();
         }
     }
 }
